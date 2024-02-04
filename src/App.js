@@ -54,7 +54,12 @@ function App() {
     <div className="App">
       <Banner/>
       <Formulario times={times.map(time => time.nome)} aoCadastrar={cadastro => aoNovoCadastro(cadastro)}/>
-      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
+      {times.map(time => <Time key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria}
+        cadastros={cadastros.filter(cadastro => cadastro.time === time.nome)}
+      />)}
     </div>
   );
 }
