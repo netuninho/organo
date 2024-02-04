@@ -47,7 +47,6 @@ function App() {
   const [cadastros, setCadastros] = useState([])
 
   const aoNovoCadastro = (cadastro) => {
-    console.log(cadastro);
     setCadastros([...cadastros, cadastro])
   }
 
