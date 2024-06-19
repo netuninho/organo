@@ -1,5 +1,7 @@
+import React from 'react';
 import Cards from '../Cards'
 import './Time.css'
+
 
 const Time = (props) => {
     return (

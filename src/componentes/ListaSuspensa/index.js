@@ -1,4 +1,6 @@
+import React from 'react';
 import './ListaSuspensa.css'
+
 
 const ListaSuspensa = (props) => {
     return (

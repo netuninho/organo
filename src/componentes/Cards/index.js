@@ -1,4 +1,6 @@
+import React from 'react';
 import './Cards.css'
+
 
 const Cards = ({nome, imagem, cargo, corDeFundo}) => {
     return (
